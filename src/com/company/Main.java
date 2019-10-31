@@ -59,7 +59,7 @@ public class Main {
                for(int j=0;j<Nodes[i].workerNeeds;j++)
                {
                    int salary=C+Nodes[i].range;
-                   if(workers>0 && Nodes[i].range>0)
+                   if(workers>0 && Nodes[i].range>=0)
                    {
                        System.out.println(salary);
                        workers--;

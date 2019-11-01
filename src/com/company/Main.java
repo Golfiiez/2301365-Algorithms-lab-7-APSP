@@ -87,23 +87,15 @@ public class Main {
 
 
                     Extended[i][j] = Math.min(Extended[i][j], ((currentMat[k][j] != -1) && (currentMat[i][k] != -1)) ? currentMat[k][j] + currentMat[i][k] : Integer.MAX_VALUE);
-//                    if (i == 0 && j == 3) {
-//                        System.out.println(currentMat[i][k] + " " + currentMat[k][j] + " " + Extended[i][j] + " " + k);
-//                    }
 
                 }
                 if (Extended[i][j] == Integer.MAX_VALUE) {
                     Extended[i][j] = -1;
                 }
-//                if (i == 0 && j == 3) {
-//                    System.out.println(Extended[i][j]);
-//                }
+
 
             }
         }
-//        for (int[] row : Extended) {
-//            System.out.println(Arrays.toString(row));
-//        }
         return Extended;
     }
 }
